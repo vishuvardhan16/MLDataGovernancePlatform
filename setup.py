@@ -13,7 +13,7 @@ setup(
     name="data-governance-automation",
     version="1.0.0",
     author="Vishnuvardhan Reddy Kaithapuram",
-    author_email="vishnuvardhan@example.com",
+    author_email="vishuvardhan16@gmail.com",
     description="ML-based framework for automated data governance",
     long_description=long_description,
     long_description_content_type="text/markdown",
