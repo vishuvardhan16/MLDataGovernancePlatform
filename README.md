@@ -103,7 +103,9 @@ data-governance-automation/
 │       ├── policy.py          # Policy enforcement engine
 │       ├── framework.py       # Integrated framework
 │       ├── synthetic_data.py  # Data generation
-│       └── evaluation.py      # Evaluation metrics
+│       ├── evaluation.py      # Evaluation metrics
+│       ├── visualization.py   # Plotting and visualization
+│       └── api.py             # REST API endpoints
 ├── tests/
 │   └── test_framework.py      # Unit tests
 ├── main.py                    # Experiment runner
@@ -111,6 +113,32 @@ data-governance-automation/
 ├── setup.py
 └── README.md
 ```
+
+## REST API
+
+The framework includes an optional REST API for integration with enterprise systems:
+
+```bash
+# Start the API server
+python -c "
+from data_governance import GovernanceAutomationFramework
+from data_governance.api import run_server
+import numpy as np
+
+framework = GovernanceAutomationFramework()
+framework.initialize(training_data=np.random.randn(500, 256).astype(np.float32))
+run_server(framework, port=8000)
+"
+```
+
+API endpoints:
+- `POST /events` - Process governance events
+- `GET /lineage/{dataset_id}` - Get dataset lineage
+- `GET /anomalies` - List detected anomalies
+- `GET /violations` - List policy violations
+- `GET /reports/governance` - Get governance report
+
+Interactive docs available at `http://localhost:8000/docs`
 
 ## Key Components
 
