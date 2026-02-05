@@ -27,6 +27,7 @@ logs/
 # Output directories
 outputs/
 checkpoints/
+test_outputs/
 
 # Jupyter
 .ipynb_checkpoints/
