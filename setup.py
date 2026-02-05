@@ -12,8 +12,8 @@ long_description = readme_path.read_text() if readme_path.exists() else ""
 setup(
     name="data-governance-automation",
     version="1.0.0",
-    author="Data Governance Research Team",
-    author_email="research@example.com",
+    author="Vishnuvardhan Reddy Kaithapuram",
+    author_email="vishnuvardhan@example.com",
     description="ML-based framework for automated data governance",
     long_description=long_description,
     long_description_content_type="text/markdown",

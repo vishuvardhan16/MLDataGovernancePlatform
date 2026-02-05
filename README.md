@@ -169,7 +169,7 @@ If you use this code in your research, please cite:
   title={Automating Data Governance: A Machine Learning Approach for 
          Lineage Tracking, Anomaly Detection, and Policy Enforcement 
          in Enterprise Data Platforms},
-  author={...},
+  author={Kaithapuram, Vishnuvardhan Reddy},
   journal={...},
   year={2025}
 }
